@@ -1,0 +1,63 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    @apply text-gray-800 bg-white;
+}
+
+a {
+    @apply transition-all duration-300;
+}
+
+/* Smooth animations */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-down {
+    animation: slideDown 0.3s ease forwards;
+}
+
+/* Custom utilities */
+@layer components {
+    .btn-primary {
+        @apply px-6 py-3 bg-primary text-white font-bold rounded-lg hover:bg-opacity-90 transition-all duration-300;
+    }
+
+    .btn-accent {
+        @apply px-6 py-3 bg-accent text-primary font-bold rounded-full hover:bg-yellow-400 transition-all duration-300 shadow-lg hover:shadow-xl;
+    }
+
+    .container-max {
+        @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    }
+
+    .section-title {
+        @apply text-3xl md:text-4xl font-bold text-primary mb-4;
+    }
+
+    .section-subtitle {
+        @apply text-gray-600 text-base md:text-lg mb-8;
+    }
+}

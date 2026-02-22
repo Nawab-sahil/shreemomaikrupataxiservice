@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800" viewBox="0 0 1600 800">
+  <defs>
+    <linearGradient id="g3" x1="0" x2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#1a56db"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g3)"/>
+  <rect x="90" y="520" width="1100" height="220" rx="24" fill="rgba(255,255,255,0.04)"/>
+  <text x="80" y="160" fill="#fff" font-family="Poppins, sans-serif" font-weight="700" font-size="64">Book Quickly & Easily</text>
+  <text x="80" y="230" fill="#fff" font-family="Poppins, sans-serif" font-weight="400" font-size="28">Fast booking • Real-time tracking • On-demand rides</text>
+</svg>
